@@ -1,5 +1,5 @@
 # Adsvendas
-É um projeto pessoal com o intuito desenvolver um prototipo de um sistema pdv. Está incompleto, mas com o tempo será feita novas versões e otimizações ;)
+É um projeto pessoal criado com o objetivo de desenvolver minhas habilidades na criação de um protótipo de sistema PDV. Está incompleto, mas com o passar do tempo será feito novas versões e otimizações ;)
 
 ## Tecnologias
  - PHP
@@ -11,7 +11,7 @@
 - Cadastro de clientes
 - Cadastro de produtos
 - Historico de pedidos
-- carrinho de compras
+- Carrinho de compras
 
 ## Status
 Em desenvolvimento....
