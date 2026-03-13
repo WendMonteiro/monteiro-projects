@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f0;
+}
+
+#texto_info {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0 30px 0;
+}
+
+#login_container {
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+    gap: 50px;
+    border:2px outset gray;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.acessar {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 2px gray outset;
+    background-color: #66ccff;
+}
+
+span {
+    color: red;
+}
+
+.acessar:hover {
+    background-color: white;
+    color: black;
+    filter: drop-shadow(3px 4px 3px rgba(0,0,0, 0.5));
+}
+
+#usuario, #senha {
+    width: 250px;
+    height: 30px;
+    padding: 2px;
+    font-size: 15px;
+    border: 2px outset gray;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.alerta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+/*esconder opções do celular e pc*/
+.celular {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+.celular {
+  display: table-cell;
+}
+}

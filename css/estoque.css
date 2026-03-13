@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*adaptar no cllr os modulos*/
+@media (max-width: 768px) {
+  #menu_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+#head_estoque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid gray;
+}
+h1 {
+  margin-top: 10px;
+}
+
+#voltar {
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.busca {
+  width: 600px;
+  font-size: 20px;
+  padding: 2px;
+  border: 2x outset gray;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1200px;
+}
+
+th {
+  background-color: #001a66;
+  color: white;
+}
+
+th,
+td {
+  border: 2px outset gray;
+  padding: 8px;
+  text-align: center;
+}
+
+.novo,
+.novoCelular {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: aqua;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  padding: 4px;
+  border: 1px outset gray;
+  border-radius: 10px;
+}
+
+.novo:hover,
+.novoCelular:hover {
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.5));
+}
+
+/*esconder opções do celular e pc*/
+.pc,
+.novoCelular {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .celular,
+  .novo {
+    display: none;
+  }
+
+  .busca {
+    width: 250px;
+    font-size: 14px;
+    padding: 2px;
+    border: 2x outset gray;
+  }
+
+  .pc,
+  .novoCelular {
+    display: table-cell;
+  }
+
+  table {
+    width: auto;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    font-size: 11px;
+  }
+}
